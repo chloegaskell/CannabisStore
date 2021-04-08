@@ -1,0 +1,25 @@
+{
+  "name": "cd..",
+  "version": "1.0.0",
+  "description": "Cannabis Store Final Project",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "Chloe Gaskell and Jason Walman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "react-router-dom": "^5.2.0",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "concurrently": "^4.0.1"
+  }
+}
